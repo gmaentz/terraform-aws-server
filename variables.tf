@@ -27,21 +27,8 @@ variable "environment" {
   default     = "development"
 }
 
-variable "height" {
+variable "server_os" {
   type        = string
-  default     = "400"
-  description = "(Optional) Image height in pixels. Defaults to 400"
+  description = "Server Operating System"
+  default     = "ubuntu_20_04"
 }
-
-variable "width" {
-  type        = string
-  default     = "600"
-  description = "(Optional) Image width in pixels. Defaults to 600"
-}
-
-variable "placeholder" {
-  type        = string
-  default     = "placedog.net"
-  description = "(Optional) App URL. Defaults to placedog.net."
-}
-
